@@ -89,10 +89,10 @@ export const tools = [
         title: 'NPM',
         url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg',
     },
-    {
-        title: 'Postman',
-        url: 'src/assets/postman.png',
-    },
+    // {
+    //     title: 'Postman',
+    //     url: 'src/assets/postman.png',
+    // },
     {
         title: 'Vs Code',
         url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
