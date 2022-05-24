@@ -25,8 +25,8 @@ const Contact = () => {
 
     return (
         <div
-            className={`flex justify-center items-center ${
-                width > 1025 ? 'h-screen' : 'h-max'
+            className={`${
+                width > 1025 ? 'h-screen px-40' : 'h-max'
             }`}
         >
             <div className='space-y-16'>
