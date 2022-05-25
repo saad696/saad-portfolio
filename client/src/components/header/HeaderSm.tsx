@@ -191,7 +191,7 @@ const HeaderSm = () => {
                                     >
                                         <Menu.Item key='contact'>
                                             <Button
-                                                href='contact'
+                                                href='#contact'
                                                 type='link'
                                                 className={
                                                     menuLink.menu ===
