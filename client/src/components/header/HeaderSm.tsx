@@ -66,7 +66,7 @@ const HeaderSm = () => {
             <motion.nav animate={visible ? 'open' : 'closed'}>
                 <nav className='flex justify-between items-center'>
                     <div className='logo'>
-                        <h1 className='uppercase water-brush text-4xl cursor-pointer text-white p-3 !mb-0'>
+                        <h1 className='uppercase water-brush text-4xl cursor-pointer text-biscuit p-3 !mb-0'>
                             sss
                         </h1>
                     </div>
@@ -94,6 +94,7 @@ const HeaderSm = () => {
                                     >
                                         <Menu.Item key='home'>
                                             <Button
+                                                href='#home'
                                                 type='link'
                                                 className={
                                                     menuLink.menu === 'home' &&
@@ -117,6 +118,7 @@ const HeaderSm = () => {
                                     >
                                         <Menu.Item key='about'>
                                             <Button
+                                                href='#about'
                                                 type='link'
                                                 className={
                                                     menuLink.menu === 'about' &&
@@ -140,6 +142,7 @@ const HeaderSm = () => {
                                     >
                                         <Menu.Item key='exp'>
                                             <Button
+                                                href='#exp'
                                                 type='link'
                                                 className={
                                                     menuLink.menu === 'exp' &&
@@ -163,6 +166,7 @@ const HeaderSm = () => {
                                     >
                                         <Menu.Item key='project'>
                                             <Button
+                                                href='#projects'
                                                 type='link'
                                                 className={
                                                     menuLink.menu ===
@@ -187,6 +191,7 @@ const HeaderSm = () => {
                                     >
                                         <Menu.Item key='contact'>
                                             <Button
+                                                href='contact'
                                                 type='link'
                                                 className={
                                                     menuLink.menu ===

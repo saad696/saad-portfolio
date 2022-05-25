@@ -23,7 +23,7 @@ const Home = () => {
                     <p className='text-white text-xl'>Hi There,</p>
                     <h1
                         className={`text-white tracking-wide  ${
-                            width > 768 ? 'text-6xl' : 'text-5xl'
+                            width > 768 ? 'text-6xl' : 'text-4xl'
                         }`}
                     >
                         I'm <span className='text-stroke-primary'>Saad </span>
@@ -31,14 +31,14 @@ const Home = () => {
                     </h1>
                     <h2
                         className={`text-biscuit tracking-wide  ${
-                            width > 768 ? 'text-4xl' : 'text-3xl'
+                            width > 768 ? 'text-4xl' : 'text-2xl'
                         }`}
                     >
                         FullStack Developer
                     </h2>
                     <Button type='primary'>
                         <a
-                            href='https://drive.google.com/file/d/1U9GnQ3Wd0vCeEPO_8WMQpJEMY1J80GT7/view?usp=sharing'
+                            href='https://drive.google.com/file/d/1fv9BcyaXTuyh6s6zPusr_L780VImlYLT/view'
                             target='_blank'
                         >
                             View Resume

@@ -1,6 +1,6 @@
 import { Button, Col, Form, Input, message, Row } from 'antd';
 import TextArea from 'antd/lib/input/TextArea';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import useWindowDimensions from '../../hooks/use-window-dimensions';
 import { useForm } from '@formspree/react';
 import { motion } from 'framer-motion';
@@ -14,21 +14,33 @@ const Contact = () => {
 
     const [contactForm] = Form.useForm();
 
-    useEffect(() => {
-        if (state.succeeded) {
-            contactForm.resetFields();
-            return message.success(
-                'Thanks for reaching out to me 👌, Will get back to you soon!'
-            );
-        }
-    }, [state]);
+    const [loading, setLoading] = useState(false);
+
+    const submitContactForm = (values: {
+        name: string;
+        email: string;
+        message: string;
+    }) => {
+        setLoading(true);
+        handleSubmit(values)
+            .then((res) => {
+                if (res.response.status === 200) {
+                    contactForm.resetFields();
+                    message.success(
+                        'Thanks for reaching out to me 👌, Will get back to you soon!',
+                        4
+                    );
+                    setLoading(false);
+                }
+            })
+            .catch((err) => {
+                message.error('Something went wrong!');
+                setLoading(false);
+            });
+    };
 
     return (
-        <div
-            className={`${
-                width > 1025 ? 'h-screen px-40' : 'h-max'
-            }`}
-        >
+        <div className={`${width > 1025 ? 'h-screen px-40' : 'h-max'}`}>
             <div className='space-y-16'>
                 <Row>
                     <Col xs={24} className='text-center'>
@@ -86,7 +98,7 @@ const Contact = () => {
                             form={contactForm}
                             name='contactForm'
                             layout='vertical'
-                            onFinish={handleSubmit}
+                            onFinish={submitContactForm}
                         >
                             <Row className='px-10' align='middle'>
                                 <Col xs={24}>
@@ -158,7 +170,11 @@ const Contact = () => {
                                     </Form.Item>
                                 </Col>
                                 <Col xs={24} className='text-right'>
-                                    <Button type='primary' htmlType='submit'>
+                                    <Button
+                                        type='primary'
+                                        htmlType='submit'
+                                        loading={loading}
+                                    >
                                         Submit
                                     </Button>
                                 </Col>

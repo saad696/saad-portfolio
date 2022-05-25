@@ -21,7 +21,9 @@ const Projects = () => {
             <div className='space-y-16'>
                 <Row className='text-center'>
                     <Col xs={24}>
-                        <h1 className='text-biscuit text-5xl text-stroke-primary'>My Projects</h1>
+                        <h1 className='text-biscuit text-5xl text-stroke-primary'>
+                            My Projects
+                        </h1>
                     </Col>
                 </Row>
                 <Row
@@ -29,9 +31,18 @@ const Projects = () => {
                     className={`${width < 768 ? 'space-y-10' : 'space-y-0'}`}
                 >
                     {projectDetails.map((project, idx) => (
-                        <Col xs={24} md={12} lg={12} xl={6} key={idx}>
+                        <Col
+                            xs={24}
+                            md={12}
+                            lg={12}
+                            xl={6}
+                            key={idx}
+                            className={`${
+                                idx === 3 ? '!mt-5' : 'mt-0' || idx === 4 ? '!mt-5' : 'mt-0'
+                            }`}
+                        >
                             <motion.div
-                            className='flex justify-center'
+                                className='flex justify-center'
                                 whileHover={{ scale: 1.1 }}
                                 transition={{ type: 'spring', stiffness: 200 }}
                             >
