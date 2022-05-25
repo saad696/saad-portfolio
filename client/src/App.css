@@ -19,6 +19,7 @@ html {
 body {
     background-color: var(--secondary-color) !important;
     cursor: none;
+    overflow-x: hidden !important;
 }
 
 body,
@@ -161,7 +162,7 @@ h6 {
 /* custom styles */
 
 .text-stroke-primary {
-    -webkit-text-stroke-width: 0.35px !important;
+    -webkit-text-stroke-width: 0.45px !important;
     -webkit-text-stroke-color: var(--primary-color) !important;
     color: #000 !important;
 }

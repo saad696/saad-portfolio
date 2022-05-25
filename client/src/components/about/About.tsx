@@ -29,7 +29,7 @@ const About = () => {
                             worked on several project with different
                             technologies by writing efficient and maintainable
                             code also been dealing with constant changing
-                            requirement. Deadline oriented, logical thinker,
+                            requirements. Deadline oriented, logical thinker,
                             good listener and a fun person in general to work
                             with. Well I prefer coffee over tea typical as a
                             developer but seems atypical as an Indian guy 😅.
