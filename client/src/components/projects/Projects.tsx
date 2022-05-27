@@ -15,7 +15,7 @@ const Projects = () => {
     return (
         <div
             className={`flex justify-center items-center px-20 ${
-                width > 1025 ? 'h-screen' : 'h-max'
+                width > 1350 ? 'h-screen' : 'h-max'
             }`}
         >
             <div className='space-y-16'>

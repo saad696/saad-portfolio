@@ -40,7 +40,7 @@ const Contact = () => {
     };
 
     return (
-        <div className={`${width > 1025 ? 'h-screen px-40' : 'h-max'}`}>
+        <div className={`${width > 1350 ? 'h-screen px-40' : 'h-max'}`}>
             <div className='space-y-16'>
                 <Row>
                     <Col xs={24} className='text-center'>

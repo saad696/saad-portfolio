@@ -14,7 +14,7 @@ const Experience = () => {
     return (
         <div
             className={`flex justify-center items-center ${
-                width > 1025 ? 'h-screen' : 'h-max'
+                width > 1350 ? 'h-screen' : 'h-max'
             }`}
         >
             <Row className='text-center space-y-16' justify='center'>
