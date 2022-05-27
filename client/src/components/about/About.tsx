@@ -10,7 +10,7 @@ const About = () => {
     return (
         <div
             className={`${
-                width > 1025 ? 'h-screen' : 'h-max'
+                width > 1350 ? 'h-screen' : 'h-max'
             } flex justify-center items-center`}
         >
             <span className='space-y-16'>
