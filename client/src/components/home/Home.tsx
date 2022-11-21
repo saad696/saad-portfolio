@@ -38,7 +38,7 @@ const Home = () => {
                     </h2>
                     <Button type='primary'>
                         <a
-                            href='https://drive.google.com/file/d/1fv9BcyaXTuyh6s6zPusr_L780VImlYLT/view'
+                            href='https://drive.google.com/file/d/1XnifdEx06Ut1mQejQ3bj14qJjsW0LCcJ/view'
                             target='_blank'
                         >
                             View Resume
