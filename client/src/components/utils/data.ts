@@ -3,6 +3,7 @@ import projectOneImg from '../../assets/pl1.png';
 import projectTwoImg from '../../assets/pl2.png';
 import projectThreeImg from '../../assets/pl3.png';
 import projectFourImg from '../../assets/pl4.png';
+import projectFiveImg from '../../assets/pl5.png';
 
 // project screen shots
 import nd1 from '../../assets/projects-ss/nd1.png';
@@ -25,6 +26,12 @@ import ps5 from '../../assets/projects-ss/ps8.png';
 import ps6 from '../../assets/projects-ss/ps6.png';
 import ps7 from '../../assets/projects-ss/ps7.png';
 import ps8 from '../../assets/projects-ss/ps5.png';
+
+import gc1 from '../../assets/projects-ss/gc1.png';
+import gc2 from '../../assets/projects-ss/gc2.png';
+import gc3 from '../../assets/projects-ss/gc3.png';
+import gc4 from '../../assets/projects-ss/gc4.png';
+import gc5 from '../../assets/projects-ss/gc5.png';
 
 export const experience = [
     {
@@ -59,7 +66,7 @@ export const experience = [
         linkedInUrl: 'https://www.linkedin.com/company/trigyn-technologies/',
     },
     {
-        duration: '03/2022 - Present',
+        duration: '03/2022 - 07/2022',
         location: 'Mumbai, Maharastra',
         company: 'Vocab Coderz',
         role: 'Frontend - Code Instructor',
@@ -123,5 +130,18 @@ export const projectDetails = [
             'Core application logic development based on client requirements.',
         images: [ps1, ps2, ps3, ps4, ps5, ps6, ps7, ps8],
         hostedUrl: 'http://phduat.digitalindiacorporation.in/home',
+    },
+    {
+        projectName: 'Genconnect Digital',
+        projectDesc:
+            'Genconnect Digital is a digital marketing firm for which I have developed the entire application using React, Strapi, MySql. Which is a completely dynamic website with entire blog fucntionality embedded in it.',
+        projectThumbnail: projectFiveImg,
+        duration: '3 Months',
+        techstack: 'Typescript, React, Ant Design, Strapi, GIT, MySQL',
+        workDone: 'FullStack',
+        requirements:
+            'Develop a website to showcase the bussiness on internet for a digital marketing agency',
+        images: [gc1, gc2, gc3, gc4, gc5],
+        hostedUrl: 'http://genconnectdigital.com/',
     },
 ];
