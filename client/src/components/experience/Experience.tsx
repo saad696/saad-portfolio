@@ -63,13 +63,9 @@ const Experience = () => {
                                 >
                                     {data.role}
                                 </h1>
-                                <a
-                                    href='https://www.sagartech.co.in/'
-                                    target='_blank'
-                                    className='text-sm text-white'
-                                >
+                                <p className='text-sm text-white'>
                                     {data.company}
-                                </a>
+                                </p>
                                 <p className='text-xs text-justify'>
                                     {data.jobDesc}
                                 </p>
