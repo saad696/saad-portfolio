@@ -11,6 +11,7 @@ export { default as Footer } from './footer/Footer';
 export { default as Techstack } from './about/Techstack';
 export { default as Cursor } from './utils/Cursor';
 export { default as ScrollIndicator } from './utils/ScrollIndicator';
+export { default as ReadMore } from './utils/ReadMore';
 
 // svg components.
 export { default as ContactSvg } from './utils/svgs/ContactSvg';

@@ -21,7 +21,7 @@ const About = () => {
                 Bit About Me
               </h1>
             </div>
-            <p className={`text-biscuit text-xl leading-6 text-justify`}>
+            <p className={`text-biscuit text-base md:text-lg leading-6 text-justify`}>
               Experienced Full Stack Developer with a proven track record of 3
               years in diverse technology stacks, including MERN and MEAN.
               Flourished in both startup and MNC settings, showcasing effective
