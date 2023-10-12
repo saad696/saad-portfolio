@@ -66,7 +66,7 @@ const Experience = () => {
                                 <p className='text-sm text-white'>
                                     {data.company}
                                 </p>
-                                <p className='text-xs text-justify'>
+                                <p className='text-sm text-justify'>
                                     {data.jobDesc}
                                 </p>
                             </Timeline.Item>
