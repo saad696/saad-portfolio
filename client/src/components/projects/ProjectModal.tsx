@@ -15,7 +15,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
     return (
         <>
             <Modal
-                title='Al Nizami Darbar'
+                title={projectData?.projectName}
                 visible={projectData !== undefined}
                 footer={null}
                 onCancel={() => {

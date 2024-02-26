@@ -1,4 +1,4 @@
-import { Button, PageHeader } from 'antd';
+import { Alert, Button, PageHeader } from 'antd';
 import { useState } from 'react';
 
 import { motion } from 'framer-motion';
@@ -53,6 +53,16 @@ const Header: React.FC<HeaderProps> = ({ menuLink, setMenuLink }) => {
 
     return (
         <>
+            <Alert
+                message={
+                    <b className='text-[#418f20] text-center'>
+                        Get ready for a big surprise! I’m working on a new and
+                        improved version of my portfolio. Will be out soon 🚀
+                    </b>
+                }
+                type='success'
+                closable
+            />
             <PageHeader
                 className='site-page-header'
                 title={
