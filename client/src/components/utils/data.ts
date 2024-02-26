@@ -163,7 +163,7 @@ export const projectDetails = [
         requirements:
             'Led pivotal contributions as a Full Stack Engineer in the development of a scholarship portal from scratch  for the Ministry of Electronics & Information Technology (MeitY), Government of India, aimed at enhancing PhD enrollment in the Electronic Design and Manufacturing (ESDM) and IT/IT-enabled Services (ITES) sectors.      ',
         images: [ps1, ps2, ps3, ps4, ps5, ps6, ps7, ps8],
-        hostedUrl: 'http://phduat.digitalindiacorporation.in/home',
+        hostedUrl: 'http://phd.digitalindiacorporation.in/home',
     },
     {
         projectName: 'Genconnect Digital',
