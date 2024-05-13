@@ -46,6 +46,14 @@ function App() {
 
     const { width, height } = useWindowDimensions();
 
+    useEffect(() => {
+        alert('Redirecting to my new portfolio in 3s');
+
+        setTimeout(() => {
+            window.open('https://sdesaadshaikh.vercel.app');
+        }, 3000);
+    }, []);
+
     return (
         <>
             <ScrollIndicator />
@@ -56,7 +64,10 @@ function App() {
                 <HeaderSm />
             )}
             <div className='main-container space-y-24'>
-                <section className={`${width > 1350 ? 'h-[90vh]' : 'h-max'}`} id='home'>
+                <section
+                    className={`${width > 1350 ? 'h-[90vh]' : 'h-max'}`}
+                    id='home'
+                >
                     <Home />
                 </section>
                 <section id='about'>
