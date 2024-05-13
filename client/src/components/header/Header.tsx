@@ -55,13 +55,11 @@ const Header: React.FC<HeaderProps> = ({ menuLink, setMenuLink }) => {
         <>
             <Alert
                 message={
-                    <b className='text-[#418f20] text-center'>
-                        Get ready for a big surprise! I’m working on a new and
-                        improved version of my portfolio. Will be out soon 🚀
+                    <b className='text-[#418f20] text-center text-xl'>
+                        Hey guys my new portfolio is live at <a href="https://sdesaadshaikh.vercel.app" target='_blank'>www.sdesaadshaikh.vercel.app</a>
                     </b>
                 }
                 type='success'
-                closable
             />
             <PageHeader
                 className='site-page-header'

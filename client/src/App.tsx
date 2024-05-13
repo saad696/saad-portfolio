@@ -47,11 +47,9 @@ function App() {
     const { width, height } = useWindowDimensions();
 
     useEffect(() => {
-        alert('Redirecting to my new portfolio in 3s');
-
         setTimeout(() => {
             window.open('https://sdesaadshaikh.vercel.app');
-        }, 3000);
+        }, 2000);
     }, []);
 
     return (

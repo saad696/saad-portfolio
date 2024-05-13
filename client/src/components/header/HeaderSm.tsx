@@ -1,5 +1,5 @@
 import { MenuOutlined } from '@ant-design/icons';
-import { Button, Drawer, Menu } from 'antd';
+import { Alert, Button, Drawer, Menu } from 'antd';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { variantsForMenu, variantsForMenuItem } from './framer.variants';
@@ -63,6 +63,20 @@ const HeaderSm = () => {
 
     return (
         <>
+            <Alert
+                message={
+                    <b className='text-[#418f20] text-center text-xl'>
+                        Hey guys my new portfolio is live at{' '}
+                        <a
+                            href='https://sdesaadshaikh.vercel.app'
+                            target='_blank'
+                        >
+                            www.sdesaadshaikh.vercel.app
+                        </a>
+                    </b>
+                }
+                type='success'
+            />
             <motion.nav animate={visible ? 'open' : 'closed'}>
                 <nav className='flex justify-between items-center'>
                     <div className='logo'>
